@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/heyLoginNowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey,\n Login now."
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/design_image_bb"
+        app:layout_constraintTop_toBottomOf="@id/design_image_bb"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crteate new"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ifYouAreNewTextView"
+        app:layout_constraintStart_toEndOf="@+id/ifYouAreNewTextView"
+        app:layout_constraintTop_toBottomOf="@+id/heyLoginNowTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/design_image_bb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/design_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ifYouAreNewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="if you are new / "
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@+id/heyLoginNowTextView"
+        tools:layout_editor_absoluteX="42dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agemcyButtom"
+        android:layout_width="290dp"
+        android:layout_height="53dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttom_shape"
+        android:backgroundTint="#FF9E0F"
+        android:drawableEnd="@drawable/ico_info"
+        android:gravity="start|center"
+        android:paddingStart="30dp"
+        android:paddingRight="10dp"
+        android:text="Dstudio_Agency"
+        app:layout_constraintStart_toStartOf="@id/design_image_bb"
+        app:layout_constraintTop_toBottomOf="@id/ifYouAreNewTextView" />
+
+    <EditText
+        android:id="@+id/forgotPasswordEditTexdt"
+        android:layout_width="285dp"
+        android:layout_height="74dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buttom_shape"
+        android:backgroundTint="#5A5A5A"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingVertical="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/agemcyButtom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/agemcyButtom"
+        app:layout_constraintTop_toBottomOf="@+id/agemcyButtom" />
+
+    <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            app:layout_goneMarginTop="10dp"
+            android:textSize="19sp"
+            android:text="forgot password/"
+            app:layout_constraintTop_toBottomOf="@id/forgotPasswordEditTexdt"
+            app:layout_constraintBottom_toTopOf="@id/forgotPasswordEditTexdt"
+            android:layout_marginTop="10dp"
+            />
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/heyLoginNowTextView"
+        app:layout_constraintStart_toEndOf="@id/forgotPasswordTextView"
+        app:layout_constraintBottom_toBottomOf="@id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="reset"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
